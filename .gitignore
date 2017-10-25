@@ -1,0 +1,12 @@
+# Node.JS
+## Modules
+node_modules/
+node-obs/
+
+# CMake
+## Generic Build Directory
+build/
+## 32-bit directory
+build32/
+## 64-bit directory
+build64/

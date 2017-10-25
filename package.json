@@ -1,0 +1,25 @@
+{
+  "name": "node-obs",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "authors": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:twitchalerts/node-obs.git"
+  },
+  "licenses": [],
+  "main": "index.js",
+  "scripts": {
+    "configure": "cmake-js configure",
+    "build": "cmake-js compile",
+    "test": "node test/obs-module.js"
+  },
+  "devDependencies": {
+    "cmake-js": "^3.4.0",
+    "nodeunit": "^0.10.2"
+  },
+  "dependencies": {
+    "nan": "^2.6.2"
+  }
+}

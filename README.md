@@ -1,3 +1,6 @@
+# Deprecated
+node-obs is deprecated in favor of obs-studio-node. The streamlabs-obs client still uses node-obs but work is being done to remove the reliance on it. 
+
 # node-obs
 'node-obs' is a Node.JS module integrating Open Broadcaster Software Studio. The project uses cmake-js for easy integration with CMake based projects and partially supports node-gyp.
 
@@ -5,35 +8,11 @@
 * [Node.JS](https://nodejs.org/en/) with NPM
 * [CMake](https://cmake.org/)
 * Open Broadcaster Studio (Build for 32-bit in /build32 and 64-bit in /build64)
-* cmake-js Node.JS module
-
-### Mac OSX / Apple
-* Node.js - Download and Install [Node.js](http://www.nodejs.org/download/). You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
-
-```
-brew update
-brew install nodejs npm ffmpeg glew cmake qt5
-```
-
-### Debian/Ubuntu (Linux)
-Linux/OSX: You can follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy installation.
-
-```
-apt-get update
-apt-get install nodejs npm ffmpeg glew cmake qt5
-```
 
 ### Windows
 1. Install Node.JS and add it to PATH
 2. Install CMake and add it to PATH
 3. Install Visual Studio 2015
-
-### All platforms
-Install cmake-js globally:
-
-```
-npm install -g cmake-js
-```
 
 # Using cmake-js
 cmake-js is pretty much a drop-in replacement for node-gyp and works about as you would expect a CMake based solution to work. We can choose where to build, have some control over what project generator is being used and can also easily choose what runtime we are building against.
